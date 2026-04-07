@@ -1,5 +1,5 @@
 body 
-{background-image: url("hinh.JPG");
+{background-image: url("cui.JPG");
 color: blue;
 font-size:25	px
 }
@@ -19,7 +19,7 @@ p {
 .table1 {
   
   
-  padding: 2px;
+  padding: 2px;	
   border-radius: 15px;
   color: white;
   background-color: cyan;
@@ -52,4 +52,15 @@ color: red;}
 li{
 	font-size:25px;
 }
+.cui {
+	 font-weight: bolder;
+  text-align: center;
+  font-size:15px;
+}
+.cui2{
+	 font-weight: bolder;
+text-align: center;
+font-size:50px;}
+
+	
 	
