@@ -1,0 +1,55 @@
+body 
+{background-image: url("hinh.JPG");
+color: blue;
+font-size:25	px
+}
+
+h1 {
+  color: blue;
+  font-weight: bolder;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 25px;
+
+ 
+}
+.table1 {
+  
+  
+  padding: 2px;
+  border-radius: 15px;
+  color: white;
+  background-color: cyan;
+  
+}
+h3 {
+	color: red;
+	font-size:25px;
+	
+}
+.table2 {
+
+
+padding: 2px;
+ color: white;
+ background-color: cyan;
+
+ border-radius: 15px;
+ 
+}
+th,td{
+width:auto;
+height:auto;
+border: 1px solid pink;
+border-radius: 10px;
+}
+h4{
+font-size:25px;
+color: red;}
+li{
+	font-size:25px;
+}
+	
