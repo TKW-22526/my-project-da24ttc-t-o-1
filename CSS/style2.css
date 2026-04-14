@@ -1,0 +1,64 @@
+* {
+    padding: 0%;
+    margin: 0%  ;
+}
+body{
+    background-image: url("cui.JPG");
+    color: blue;
+    font-size: 25px;
+}
+.container {
+    background-color: cyan;
+border-radius: 20px;
+padding: 40px;
+font-weight: bolder;
+  text-align: left    ;
+max-width: 500px;
+  margin: 50px auto;
+  font-family: 'Arial', sans-serif;
+
+
+}
+form#frmLogin {
+    background-color: rgb(119, 0, 255);
+    margin-left: 40px;
+}
+.title{
+    color: 
+    pink  ;
+    font-size: 24px;
+ text-shadow: #000 1px 1px 2px;
+ margin-bottom: auto;
+}
+.form-group {
+    margin-bottom: 15px;
+
+}
+.form-control{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+.button {
+  width: 100%;
+    background-color: pink;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    max-width: 200px;
+}
+.form-control:focus {
+   width: 50px;
+   height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+label {
+    font-size: 18px;
+    color: pink;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
