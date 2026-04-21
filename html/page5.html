@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Hóa đơn thanh toán</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../CSS/style5.css">
+</head>
+<body>
+   <div class="container">
+      <form id="leg">
+            <h3 class="title">In bảng cửu chương </h3>
+                  <div class="from-group">
+                        <label for="so">nhập số</label>
+                        <input class="so" type="num" id="so"name=
+                        "textUesename" placeholder="nhập Số">
+                  </div>
+                   <div>
+                    <button type="button" class="in" onclick="inbang()">In</button>
+                  
+                  </div>
+                  
+<div id ="kq"></div>
+            
+      </form>
+    <script> function inbang(){
+const nhap=document.forms["leg"];
+const so=nhap.elements[0];
+let leg = "";
+let num = parseInt (so.value)
+for(let i=1;i<=10;i++){
+leg += num + ' x ' + i + ' = '+ (num * i ) +"<br>";    
+}
+ document.getElementById("kq").innerHTML = leg;
+    }
+    </script>
