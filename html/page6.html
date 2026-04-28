@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Thông tin cá nhân</title>
+    <link rel="stylesheet" href="../CSS/style6.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+const newDiv = document.createElement("div");
+newDiv.setAttribute("class", "product-item");
+const newImage = document.createElement("img");
+newImage.setAttribute("class", "anh");
+newImage.setAttribute("src", "../assets/images/cui.jpg");
+newDiv.appendChild(newImage);
+const ten = document.createElement("div");
+ten.textContent = "con cua ";
+ten.setAttribute("class", "product-title");
+newDiv.appendChild(ten);
+const gia = document.createElement("div");
+gia.textContent = "200.000 VNĐ / 1 kg";
+gia.setAttribute("class", "product-price");
+newDiv.appendChild(gia);
+const Link = document.createElement("a");
+Link.setAttribute("href","https://vuahaisangiasi.com.vn/vua-cua-ca-mau-tai-tra-vinh.html");
+Link.textContent = "xem ở đây ";
+newDiv.appendChild(Link);
+document.body.appendChild(newDiv);
+    </script>
+</body>
+</html>
