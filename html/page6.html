@@ -2,30 +2,24 @@
 <html lang="vi">
 <head>
     <title>Thông tin cá nhân</title>
-    <link rel="stylesheet" href="../CSS/style6.css">
     <meta charset="UTF-8">
+       <!-- Nhúng file lib.js chứa hàm addProduct của bạn vào trước -->
+    <script src="../js/lib.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script gọi dữ liệu -->
 </head>
 <body>
+  <div class="container">
+<div class = "product-list" id = "product-list row row-cols-1 row-cols-4 g-4" ></div>
+</div>
     <script>
-const newDiv = document.createElement("div");
-newDiv.setAttribute("class", "product-item");
-const newImage = document.createElement("img");
-newImage.setAttribute("class", "anh");
-newImage.setAttribute("src", "../assets/images/cui.jpg");
-newDiv.appendChild(newImage);
-const ten = document.createElement("div");
-ten.textContent = "con cua ";
-ten.setAttribute("class", "product-title");
-newDiv.appendChild(ten);
-const gia = document.createElement("div");
-gia.textContent = "200.000 VNĐ / 1 kg";
-gia.setAttribute("class", "product-price");
-newDiv.appendChild(gia);
-const Link = document.createElement("a");
-Link.setAttribute("href","https://vuahaisangiasi.com.vn/vua-cua-ca-mau-tai-tra-vinh.html");
-Link.textContent = "xem ở đây ";
-newDiv.appendChild(Link);
-document.body.appendChild(newDiv);
+        productList.forEach(function(item) {
+            addProduct(item.id, item.name, item.price, item.image, item.productlink);
+        });
     </script>
 </body>
 </html>
