@@ -4,71 +4,81 @@ const productList =[
     id: "1",
     name: "Cua to",
     price: "250k/kg",
-    image: "../assets/images/cua-to.jpg",
-    productlink: "https://vuahaisangiasi.com.vn/vua-cua-ca-mau-tai-tra-vinh.html"
+    image: "../assets/images/cui.jpg",
+    productlink: "product-detail.html",
+    desc :"là con cua."
   },
   {
     id: "2",
     name: "Tôm sú Cà Mau",
     price: "350k/kg",
     image: "../assets/images/tom-su.jpg",
-    productlink: "https://vuahaisangiasi.com.vn/tom-su-ca-mau.html"
+    productlink: "product-detail.html",
+    desc:"là con tôm to"
   },
   {
     id: "3",
     name: "Mực ống tươi",
     price: "280k/kg",
     image: "../assets/images/muc-ong.jpg",
-    productlink: "https://vuahaisangiasi.com.vn/muc-ong-tuoi.html"
+    productlink: "product-detail.html",
+    desc:"là con mực ống"
   },
   {
     id: "4",
     name: "Ghẹ xanh loại 1",
     price: "450k/kg",
     image: "../assets/images/ghe-xanh.jpg",
-    productlink: "https://vuahaisangiasi.com.vn/ghe-xanh.html"
+    productlink: "product-detail.html",
+    desc:"rang me ăn ngon"
   },
   {
     id: "5",
     name: "Hàu sữa",
     price: "45k/kg",
-    image: "../assets/images/hau-sua.jpg",
-    productlink: "https://vuahaisangiasi.com.vn/hau-sua.html"
+    image: "../assets/images/hao-sua.jpg",
+    productlink: "product-detail.html",
+    desc:"siêu kẽm"
   },
   {
     id: "6",
     name: "Bạch tuộc",
     price: "180k/kg",
     image: "../assets/images/bach-tuoc.jpg",
-    productlink: "https://vuahaisangiasi.com.vn/bach-tuoc.html"
+    productlink: "product-detail.html",
+    desc:"ăn khá ngon"
   },
   {
     id: "7",
     name: "Ốc hương",
     price: "320k/kg",
     image: "../assets/images/oc-huong.jpg",
-    productlink: "https://vuahaisangiasi.com.vn/oc-huong.html"
+    productlink: "product-detail.html",
+    desc:"bổ"
   },
   {
     id: "8",
     name: "Cá mú đỏ",
     price: "420k/kg",
     image: "../assets/images/ca-mu.jpg",
-    productlink: "https://vuahaisangiasi.com.vn/ca-mu-do.html"
+    productlink: "product-detail.html",
+    desc:"chưa ăn nên ko bt sao"
   },
   {
     id: "9",
     name: "Tôm hùm xanh",
     price: "850k/kg",
     image: "../assets/images/tom-hum.jpg",
-    productlink: "https://vuahaisangiasi.com.vn/tom-hum-xanh.html"
+    productlink: "product-detail.html",
+    desc:"giá cao lắm"
   },
   {
     id: "10",
     name: "Nghêu biển",
     price: "60k/kg",
     image: "../assets/images/ngheu.jpg",
-    productlink: "https://vuahaisangiasi.com.vn/ngheu-bien.html"
+    productlink: "product-detail.html",
+    desc:"tươi"
   }
 ];
 
@@ -108,7 +118,7 @@ productPrice.appendChild(productPriceText);
 const productLink = document.createElement("a");
 const productLinkText = document.createTextNode("Xem chi tiết");
 productLink.appendChild(productLinkText);
-productLink.setAttribute("href", hyperLink);
+productLink.setAttribute("href", hyperLink+"?id="+id);
 productLink.setAttribute("class","btn btn-info")
 //gắn vào
 
@@ -116,8 +126,10 @@ productInfo.appendChild(productName);
 productInfo.appendChild(productPrice);
 productInfo.appendChild(productLink);
 //gắn tt vào
-productInfo.appendChild(productImage);
-productInfo.appendChild(productInfo);
+productItem.appendChild(productImage);
+productItem.appendChild(productInfo);
+
 //end game
 document.getElementById("product-list").appendChild(productItem);
+
 }
